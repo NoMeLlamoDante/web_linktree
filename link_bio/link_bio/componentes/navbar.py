@@ -8,5 +8,4 @@ def navbar() -> rx.Component:
             position="sticky",
             background="grey",
             padding="1rem",
-            width="100%",
         )
