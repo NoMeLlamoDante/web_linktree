@@ -6,9 +6,13 @@ def link_button(label: str, url: str, icon:str = None) -> rx.Component:
         rx.button(
             rx.hstack(
                 rx.icon(icon if icon else "external-link"),
-                rx.text(label, style=styles.button_tittle_style), 
-                widht="100%"),
+                rx.text(
+                    label, 
+                    style=styles.button_tittle_style
+                ), 
+                widht="100%"
             ),
+        ),
         href=url,
         is_external=True,
         width="100%",

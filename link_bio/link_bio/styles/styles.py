@@ -1,28 +1,36 @@
 import reflex as rx
 from enum import Enum
+from link_bio.styles.colors import Color
 
 #Constants for styling
-MAX_WIDTH = "600px"
 
-
+    
 #Spacing constants
-
 class Size(Enum):
     SMALL = "0.5em"
     MEDIUM = "0.8em"
     NORMAL = "1em"
+    NORMAL_LARGE = "1.5em"
     LARGE = "2em"
     EXTRA_LARGE = "3em"
     
-# Styles 
-
+# Styles for all elements
 BASE_STYLE = {
+    "background":Color.BLACK,
+    "color":Color.WHITE,
     rx.button: {
         "width": "100%",
         "height": "100%",
         "display": "block",
         "padding": Size.SMALL.value,
         "border_radius": Size.SMALL.value,
+        "background": Color.GREY,
+        "color" : Color.WHITE, 
+        "_hover": {
+            "background": Color.GREEN,
+            "color": Color.WHITE,
+            
+        }   
     },
 }
 
@@ -41,4 +49,15 @@ title_style = dict(
     justify_content = "center",
     text_align = "center",
     width = "100%",
+    color = Color.LIGHT_GREEN,
+)
+
+navbar_style = dict(
+    align_items="center",
+    position = "sticky",
+    padding_x = Size.LARGE.value,
+    padding_y = Size.SMALL.value,
+    top = "0px",
+    width ="100%",
+    background = Color.GREEN
 )

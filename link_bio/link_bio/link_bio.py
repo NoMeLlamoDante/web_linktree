@@ -8,19 +8,25 @@ class State(rx.State):
     pass
 
 def index() -> rx.Component:
-    return rx.box(
-        navbar(),
-        rx.center(
-            rx.vstack(
-                header(),
-                links(),
-                max_width=styles.MAX_WIDTH,
-                margin_y=styles.Size.LARGE.value,
-                align="center",
+    return rx.flex(
+        rx.box(
+            navbar(),
+            rx.center(
+                rx.vstack(
+                    header(),
+                    rx.divider(),
+                    links(),
+                    max_width="80%",
+                    justify="center",
+                    align="center", 
+                ),
+                padding_y=styles.Size.NORMAL_LARGE.value,
             ),
+            footer(),
             width="100%",
+            justify="center",
+            align="center", 
         ),
-        footer(),
     )
 
 app = rx.App(
