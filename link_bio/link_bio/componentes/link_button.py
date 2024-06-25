@@ -10,7 +10,9 @@ def link_button(label: str, url: str, icon:str = None) -> rx.Component:
                     label, 
                     style=styles.button_tittle_style
                 ), 
-                widht="100%"
+                widht="100%",
+                align="center",
+                alt=label,
             ),
         ),
         href=url,

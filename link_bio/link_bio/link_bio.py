@@ -32,5 +32,7 @@ def index() -> rx.Component:
 app = rx.App(
     style = styles.BASE_STYLE,
 )
-app.add_page(index)
+app.add_page(index,
+            title="Edgar | Dante Desarrollador de Software",
+            description="Página de perfil de Edgar Zarate, desarrollador de software.")
 app._compile()

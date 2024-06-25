@@ -59,5 +59,6 @@ navbar_style = dict(
     padding_y = Size.SMALL.value,
     top = "0px",
     width ="100%",
-    background = Color.GREEN
+    background = Color.GREEN,
+    
 )

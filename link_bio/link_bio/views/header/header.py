@@ -7,31 +7,33 @@ def header() -> rx.Component:
     return rx.vstack(
         rx.hstack(
             rx.avatar(
-                color_scheme="jade",
+                src="SB3Ail01.svg",
                 variant="solid", 
                 high_contrast=False, 
                 radius="large",
                 fallback="Dante", 
                 size="7",
                 z_index="-1",
+                alt="Logotipo de Edgar Zarate"
             ),
             rx.vstack(
                 title("Edgar Zarate"),
                 rx.text(
-                    "Desarrollador de software", 
+                    "Desarrollador web", 
                     size="2",
                 ),
                 align="center",
                 justify="start",
-                spacing="0",
+                spacing="1",
             ),
             justify="center",
             align="center",
         ),
         rx.text(
-            """Hola, Mi nombre es Edgar  pero mis amigos me llaman dante, 
+            """Hola, Mi nombre es Edgar  pero mis amigos me llaman Dante, 
             soy un desarrollador de software, me gusta la programación y la tecnología
             en general.""",
+            font_size=Size.MEDIUM.value,
             max_width="60%"
         ),
         align="center",
