@@ -19,7 +19,7 @@ def header() -> rx.Component:
             rx.vstack(
                 title("Edgar Zarate"),
                 rx.text(
-                    "Desarrollador web", 
+                    "Desarrollador web y mas", 
                     size="2",
                 ),
                 align="center",
