@@ -16,12 +16,12 @@ def links() -> rx.Component:
             constants.LINKEDIN_URL,
             "linkedin"
         ),
-        link_button(
-            "pokeword search",
-            constants.POKESEARCH_URL,
-        ),
-        link_button(
-            "Youtube",
-            constants.POKESEARCH_URL,
-        ),
+        # link_button(
+        #     "pokeword search",
+        #     constants.POKESEARCH_URL,
+        # ),
+        # link_button(
+        #     "Youtube",
+        #     constants.POKESEARCH_URL,
+        # ),
     )
