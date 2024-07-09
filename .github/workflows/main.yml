@@ -20,17 +20,15 @@ jobs:
         with:
           python-version: '3.12.3' 
           cache: 'pip'
-      - name: directory
-        run: cd link_bio
         
       - name: dependences
         run: pip install -r ./link_bio/requirements.txt
         
       - name: export frontend
-        run: reflex export --frontend-only
+        run: cd link_bio && reflex export --frontend-only
         
       - name: unzip frontend
-        run: unzip frontend.zip -d public
+        run: unzip link_bio/frontend.zip -d link_bio/public
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
