@@ -28,7 +28,7 @@ jobs:
         run: cd link_bio && reflex export --frontend-only
         
       - name: unzip frontend
-        run: unzip ./link_bio/frontend.zip -o public
+        run: unzip -o ./link_bio/frontend.zip -d ./link_bio/public
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
