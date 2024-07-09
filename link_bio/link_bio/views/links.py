@@ -20,4 +20,8 @@ def links() -> rx.Component:
             "pokeword search",
             constants.POKESEARCH_URL,
         ),
+        link_button(
+            "Youtube",
+            constants.POKESEARCH_URL,
+        ),
     )
