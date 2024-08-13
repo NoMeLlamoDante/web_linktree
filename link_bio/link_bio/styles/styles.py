@@ -11,6 +11,7 @@ class Size(Enum):
     MEDIUM = "0.8em"
     NORMAL = "1em"
     NORMAL_LARGE = "1.5em"
+    SUBTITLE = "1.3em"
     LARGE = "2em"
     EXTRA_LARGE = "3em"
     
@@ -50,6 +51,21 @@ title_style = dict(
     text_align = "center",
     width = "100%",
     color = Color.LIGHT_GREEN,
+)
+
+subtitle_style = dict(
+    font_size = Size.SUBTITLE.value,
+    justify_content = "left",
+    text_align = "left",
+    width = "100%",
+    color = Color.WHITE,
+)
+
+text_style = dict(
+    font_size = Size.NORMAL.value,
+    jusify_content = "right",
+    width = "100%",
+    color = Color.WHITE,
 )
 
 navbar_style = dict(

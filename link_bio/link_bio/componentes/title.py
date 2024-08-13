@@ -6,3 +6,9 @@ def title(text: str) -> rx.Component:
         text,
         style=styles.title_style,
     )
+
+def subtitle(text: str) -> rx.Component:
+    return rx.heading(
+        text, 
+        style=styles.subtitle_style,
+    )
