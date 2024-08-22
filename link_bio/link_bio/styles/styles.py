@@ -51,13 +51,11 @@ title_style = dict(
     text_align = "center",
     width = "100%",
     color = Color.LIGHT_GREEN,
+    padding_y = Size.MEDIUM.value,
 )
 
 subtitle_style = dict(
     font_size = Size.SUBTITLE.value,
-    justify_content = "left",
-    text_align = "left",
-    width = "100%",
     color = Color.WHITE,
 )
 
@@ -77,4 +75,8 @@ navbar_style = dict(
     width ="100%",
     background = Color.GREEN,
     
+)
+
+padding = dict(
+    padding_y=Size.SMALL.value,
 )

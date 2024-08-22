@@ -15,14 +15,9 @@ def index() -> rx.Component:
             rx.center(
                 rx.vstack(
                     header(),
-                    rx.divider(),
-                    rx.section(
-                        links(),
-                    ),
-                    rx.section(
-                        estudios(),
-                    ),
-                    max_width="80%",
+                    links(),
+                    estudios(),
+                    max_width="90%",
                     justify="center",
                     align="center", 
                 ),
