@@ -2,6 +2,7 @@ import reflex as rx
 from link_bio.componentes.navbar import navbar
 from link_bio.views.header.header import header
 from link_bio.views.links import links
+from link_bio.views.estudios import estudios
 from link_bio.componentes.footer import footer
 import link_bio.styles.styles as styles
 class State(rx.State):
@@ -14,9 +15,9 @@ def index() -> rx.Component:
             rx.center(
                 rx.vstack(
                     header(),
-                    rx.divider(),
                     links(),
-                    max_width="80%",
+                    estudios(),
+                    max_width="90%",
                     justify="center",
                     align="center", 
                 ),
