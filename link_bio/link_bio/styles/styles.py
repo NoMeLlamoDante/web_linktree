@@ -79,7 +79,7 @@ navbar_style = dict(
 )
 
 padding = dict(
-    padding_y=Size.SMALL.value,
+    padding_y=Size.NORMAL.value,
 )
 
 logo = dict(
