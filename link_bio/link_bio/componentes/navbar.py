@@ -3,20 +3,20 @@ from link_bio.styles.styles import Size
 from link_bio.styles import styles
 from link_bio.styles.colors import Color
 
-class CondState(rx.State):
-    show: bool = True
-    def change(self):
-        self.show = not (self.show)
+# class CondState(rx.State):
+#     show: bool = True
+#     def change(self):
+#         self.show = not (self.show)
 
 def navbar_logo()->rx.Component:
     return rx.hstack(
         rx.image(src="SB3Ail01.svg", height=Size.EXTRA_LARGE.value, width="auto"),
-        rx.cond(
-            CondState.show,
+        # rx.cond(
+        #     CondState.show,
             rx.heading("Edgar Zarate",size="7", weight="bold"),
-            rx.heading("Dante", size="7", weight="bold"),
-        ),
-        on_click=CondState.change,
+            # rx.heading("Dante", size="7", weight="bold"),
+        # ),
+        # on_click=CondState.change,
         align_items="center"
     ),
 
