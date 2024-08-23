@@ -74,9 +74,15 @@ navbar_style = dict(
     top = "0px",
     width ="100%",
     background = Color.GREEN,
+    z_index=100
     
 )
 
 padding = dict(
     padding_y=Size.SMALL.value,
+)
+
+logo = dict(
+    width="50px",
+    background = Color.GREEN,
 )
