@@ -7,6 +7,7 @@ def card_study(src: any , escuela: str, *cursos: str ) -> rx.Component:
             rx.card(
                 rx.center(src),
                 variant="ghost",
+                padding_y=styles.Size.LARGE.value,
             ),
             rx.card(
                 rx.vstack(
@@ -21,9 +22,10 @@ def card_study(src: any , escuela: str, *cursos: str ) -> rx.Component:
                     align=rx.breakpoints(initial="center", sm="start"),
                     justify="center",
                     height="100%",
+                    padding_y=styles.Size.LARGE.value,
+                    padding_x=styles.Size.EXTRA_LARGE.value,
                 ),
                 variant="ghost",
             ),
             columns=rx.breakpoints(initial="1", sm="2"),
-            style=styles.padding
         ),
