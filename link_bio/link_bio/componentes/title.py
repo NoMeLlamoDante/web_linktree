@@ -12,3 +12,9 @@ def subtitle(text: str) -> rx.Component:
         text, 
         style=styles.subtitle_style,
     )
+
+def principal(text: str) -> rx.Component:
+    return rx.heading(
+        text,
+        style=styles.principal_style
+    )
