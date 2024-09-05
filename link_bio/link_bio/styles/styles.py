@@ -25,10 +25,10 @@ BASE_STYLE = {
         "display": "block",
         "padding": Size.SMALL.value,
         "border_radius": Size.SMALL.value,
-        "background": Color.GREY,
+        "background": Color.GREEN,
         "color" : Color.WHITE, 
         "_hover": {
-            "background": Color.GREEN,
+            "background": Color.LIGHT_GREY,
             "color": Color.WHITE,
             
         }   
@@ -57,6 +57,14 @@ title_style = dict(
 subtitle_style = dict(
     font_size = Size.SUBTITLE.value,
     color = Color.WHITE,
+)
+
+principal_style = dict(
+    font_size = Size.EXTRA_LARGE.value,
+    justify_content = "center",
+    width = "100%",
+    color = Color.LIGHT_GREEN,
+    padding_y= "0.5rem",
 )
 
 text_style = dict(
