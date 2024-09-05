@@ -20,7 +20,7 @@ def link_button(label: str, url: str, icon:str = None) -> rx.Component:
         width="100%",
     )
     
-def icon_button(url, str, icon:str = None) -> rx.Component:
+def icon_button(url:str, icon:str = None) -> rx.Component:
     return rx.link(
         rx.button(
             rx.hstack(
