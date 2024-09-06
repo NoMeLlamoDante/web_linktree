@@ -11,7 +11,7 @@ class State(rx.State):
 def index() -> rx.Component:
     return rx.flex(
         rx.box(
-            navbar(),
+            #navbar(),
             rx.center(
                 rx.vstack(
                     header(),
