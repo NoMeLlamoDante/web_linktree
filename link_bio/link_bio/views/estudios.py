@@ -50,4 +50,5 @@ def estudios() -> rx.Component:
             "Python Intermedio",
             "Python avanzado",
         ),
+        width=rx.breakpoints(initial="90%", sm="60%"),
     ),
