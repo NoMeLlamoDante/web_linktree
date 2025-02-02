@@ -1,6 +1,21 @@
 import reflex as rx
 from link_bio.componentes.title import title, subtitle
 from link_bio.componentes.card import card_study
+from link_bio.componentes.text import studies_data
+
+escuelas = list(studies_data.keys())
+
+itvh = [escuelas[0]]
+itvh_studios = studies_data.get(itvh[0])
+itvh.append(itvh_studios)
+
+cecati = [escuelas[1]]
+cecati_studios = studies_data.get(cecati[0])
+cecati.extend(cecati_studios)
+
+ifortab = [escuelas[2]]
+ifortab_studios = studies_data.get(ifortab[0])
+ifortab.extend(ifortab_studios)
 
 def estudios() -> rx.Component:
     return rx.section(
@@ -16,8 +31,7 @@ def estudios() -> rx.Component:
                 border= "5px, solid #004638",
                 background= "#FFFFFF",
             ),
-            "Instituto Tecnológico de Villahermosa",
-            "Ingeniería en Sistemas Computacionales",
+            itvh[0], itvh[1]
         ),
         #Cecati
         card_study(
@@ -30,10 +44,7 @@ def estudios() -> rx.Component:
                 border= "5px, solid #004638",
                 background= "#FFFFFF",
             ),
-            "Centro de capacitación para el Trabajo Industrial No. 95",
-            "Sistemas embebidos Microcontrolados para el control electrónico",
-            "Sistemas electrónicos y de control analógicos y digitales",
-            "Reparación de tarjetas de control electrónico"
+            cecati[0], cecati[1], cecati[2], cecati[3]
         ),
         #IFORTAB
         card_study(
@@ -45,10 +56,7 @@ def estudios() -> rx.Component:
                 border_radius = "30px 30px",
                 border= "5px, solid #004638",
             ),
-            "Instituto de Formación para el trabajo",
-            "Python Basico",
-            "Python Intermedio",
-            "Python avanzado",
+            ifortab[0], ifortab[1], ifortab[2], ifortab[2]
         ),
         width=rx.breakpoints(initial="90%", sm="60%"),
     ),
