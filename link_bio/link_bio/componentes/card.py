@@ -19,7 +19,7 @@ def card_study(src: any , escuela: str, *cursos: str ) -> rx.Component:
                     ),
                 ),
                 direction="column",
-                align=rx.breakpoints(initial="center", sm="start"),
+                align="start",
                 justify="center",
                 height="100%",
                 padding_y=styles.Size.LARGE.value,

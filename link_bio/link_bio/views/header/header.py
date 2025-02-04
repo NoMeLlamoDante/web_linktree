@@ -1,7 +1,7 @@
 import reflex as rx
 from link_bio.componentes.title import principal
 from link_bio.styles.styles import Size, Color
-from link_bio.componentes.text import complete_bio
+import link_bio.componentes.text as text
 from link_bio.componentes.link_button import icon_button
 from  link_bio.componentes import constants
 
@@ -26,15 +26,15 @@ def header() -> rx.Component:
                     justify="center",
                 ),
                 rx.vstack(
-                    principal("Edgar Zarate"),
-                    rx.text("Desarrollador web y un poco mas", 
+                    principal(text.name),
+                    rx.text(text.sub_name_thinking, 
                         size="4",
                     ),
                     #Ubicación
                     rx.card(
                         rx.hstack(
                                 rx.icon("map-pin"),
-                                rx.text("Villahermosa, Tabasco",weight="light"),
+                                rx.text(text.city,weight="light"),
                         ),
                         variant="ghost"
                     ),
@@ -63,7 +63,7 @@ def header() -> rx.Component:
         ),
         rx.vstack(
             rx.text(
-                complete_bio,
+                text.complete_bio,
                 font_size="3",
                 padding_y=rx.breakpoints(initial=Size.NORMAL.value, sm=Size.NORMAL_LARGE.value),
             ),
