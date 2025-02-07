@@ -1,12 +1,14 @@
-import reflex as rx
+""" Web section: Footer  """
 import datetime
-import link_bio.styles.styles as styles
+import reflex as rx
+from link_bio.styles import styles
 
 
 def footer() -> rx.Component:
+    """ Reflex component: Footer section"""
     return rx.vstack(
         rx.image(
-            src="favicon.ico", 
+            src="favicon.ico",
             width="50px"
         ),
         rx.text(
