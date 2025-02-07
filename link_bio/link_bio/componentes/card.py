@@ -1,8 +1,11 @@
+""" Web module: studies card"""
 import reflex as rx
-import link_bio.styles.styles as styles
+from link_bio.styles import styles
 from link_bio.componentes.title import subtitle
 
-def card_study(src: any , escuela: str, *cursos: str ) -> rx.Component:
+
+def card_study(src: any, escuela: str, *cursos: str) -> rx.Component:
+    """ Reflex module: card with a image, and a list with each study done"""
     return rx.grid(
         rx.card(
             rx.center(src),
@@ -28,4 +31,4 @@ def card_study(src: any , escuela: str, *cursos: str ) -> rx.Component:
             variant="ghost",
         ),
         columns=rx.breakpoints(initial="1", sm="2"),
-    ),
+    )
