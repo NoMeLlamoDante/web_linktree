@@ -20,7 +20,7 @@ ifortab.extend(ifortab_studios)
 
 
 def estudios() -> rx.Component:
-    """ Webpage section: Estudios"""
+    """ Reflex component: Studies section"""
     return rx.section(
         title("Estudios"),
         # ITVH
