@@ -1,7 +1,10 @@
-import link_bio.styles.styles as styles
+""" Web module: button """
 import reflex as rx
+from link_bio.styles import styles
 
-def link_button(label: str, url: str, icon:str = None) -> rx.Component:
+
+def link_button(label: str, url: str, icon: str = None) -> rx.Component:
+    """ Reflex module: Button with an icon labeled """
     return rx.link(
         rx.button(
             rx.hstack(
@@ -19,8 +22,10 @@ def link_button(label: str, url: str, icon:str = None) -> rx.Component:
         is_external=True,
         width="100%",
     )
-    
-def icon_button(url:str, icon:str = None) -> rx.Component:
+
+
+def icon_button(url: str, icon: str = None) -> rx.Component:
+    """ Reflex module: Button with an icon """
     return rx.link(
         rx.button(
             rx.hstack(

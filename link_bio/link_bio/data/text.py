@@ -1,12 +1,13 @@
+""" all texts """
 # Header
-name = "Edgar Zarate",
+NAME = "Edgar Zarate"
 
-sub_name_thinking = "Desarrollador web y un poco mas",
+JOB = "Desarrollador web y un poco mas"
 
-city = "Villahermosa, Tabasco",
+CITY = "Villahermosa, Tabasco"
 
 # Bio
-complete_bio = """Hola, mi nombre Edgar Zarate, pero también puedes 
+COMPLETE_BIO = """Hola, mi nombre Edgar Zarate, pero también puedes 
 llamarme Dante. Soy de la ciudad de Villahermosa. Me gusta la programación,
 y con el tiempo también me he hecho muy fan de la electrónica he trabajado
 como desarrollador de tarjetas electrónicas y de control, tanto en la 
@@ -14,11 +15,11 @@ parte de hardware, como en la parte de software. Me gusta mucho la
 modificación de consolas retro y los videojuegos retro también.
 """,
 
-mini_bio = """Hola, mi nombre es Edgar Zarate y soy 
+MINI_BIO = """Hola, mi nombre es Edgar Zarate y soy 
 desarrollador web, bienvenido.""",
 
 # Experience
-experience_data = {
+EXPERIENCE_DATA = {
     "cematab": {
         "name": "Central de Maquinaria de Tabasco (Cematab)",
         "period": "2016",
@@ -53,7 +54,7 @@ experience_data = {
 
 
 # Studies
-studies_data = {
+STUDIES_DATA = {
     "Instituto Tecnológico de Villahermosa":
         ("Ingeniería en Sistemas Computacionales"),
     "Centro de capacitación para el Trabajo Industrial No. 95":
