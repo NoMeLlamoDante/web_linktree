@@ -3,7 +3,7 @@ import reflex as rx
 from link_bio.views.header.header import header
 from link_bio.views.estudios import estudios
 from link_bio.views.experiencia import experiencia
-from link_bio.componentes.footer import footer
+from link_bio.views.footer.footer import footer
 from link_bio.styles import styles
 
 
