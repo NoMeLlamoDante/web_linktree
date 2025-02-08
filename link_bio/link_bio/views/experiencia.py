@@ -2,19 +2,7 @@
 import reflex as rx
 from link_bio.componentes.title import title
 from link_bio.data.text import EXPERIENCE_DATA
-from link_bio.styles.styles import Size
-
-
-def card_job(place: str, period: str, resume: str) -> rx.Component:
-    """ Reflex component: card_job """
-    return rx.card(
-        rx.heading(place),
-        rx.text(period, size="2"),
-        rx.text(resume),
-        variant="ghost",
-        padding_y=Size.NORMAL.value
-    )
-
+from link_bio.componentes.card_job import card_job
 
 cematab = EXPERIENCE_DATA['cematab']
 alhec = EXPERIENCE_DATA['alhec']
