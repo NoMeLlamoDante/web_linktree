@@ -1,7 +1,7 @@
 """ Webpage section: work experience"""
 import reflex as rx
 from link_bio.componentes.title import title
-from link_bio.componentes.text import EXPERIENCE_DATA
+from link_bio.data.text import EXPERIENCE_DATA
 from link_bio.styles.styles import Size
 
 

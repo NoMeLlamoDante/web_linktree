@@ -2,7 +2,7 @@
 import reflex as rx
 from link_bio.componentes.link_button import link_button
 from link_bio.componentes.title import title
-from link_bio.componentes import constants
+from link_bio.data import constants
 
 
 def links() -> rx.Component:

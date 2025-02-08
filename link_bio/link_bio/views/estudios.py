@@ -2,7 +2,7 @@
 import reflex as rx
 from link_bio.componentes.title import title
 from link_bio.componentes.card_study import card_study
-from link_bio.componentes.text import STUDIES_DATA
+from link_bio.data.text import STUDIES_DATA
 
 escuelas = list(STUDIES_DATA.keys())
 

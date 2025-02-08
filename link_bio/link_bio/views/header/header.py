@@ -2,9 +2,9 @@
 import reflex as rx
 from link_bio.componentes.title import principal
 from link_bio.styles.styles import Size
-from link_bio.componentes import text
+from link_bio.data import text
 from link_bio.componentes.link_button import icon_button
-from link_bio.componentes import constants
+from link_bio.data import constants
 
 
 def header() -> rx.Component:
