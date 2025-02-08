@@ -1,53 +1,13 @@
 """ Web section: navbar """
 import reflex as rx
-from link_bio.styles.styles import Size
 from link_bio.styles import styles
-
+from link_bio.componentes.navbar_items import navbar_logo
+from link_bio.componentes.navbar_items import navbar_icons_item
+from link_bio.componentes.navbar_items import navbar_icons_menu_item
 # class CondState(rx.State):
 #     show: bool = True
 #     def change(self):
 #         self.show = not (self.show)
-
-
-def navbar_logo() -> rx.Component:
-    """ Navbar component: Navbar with logo """
-    return rx.hstack(
-        rx.image(
-                src="SB3Ail01.svg",
-                height=Size.EXTRA_LARGE.value,
-                width="auto"),
-        # rx.cond(
-        #     CondState.show,
-        rx.heading("Edgar Zarate", size="7", weight="bold"),
-        # rx.heading("Dante", size="7", weight="bold"),
-        # ),
-        # on_click=CondState.change,
-        align_items="center"
-    )
-
-
-def navbar_icons_item(text: str, icon: str, url: str) -> rx.Component:
-    """ Navbar component: Navbar icon item """
-    return rx.link(
-        rx.hstack(
-            rx.icon(icon),
-            rx.text(text, size="4", weight="medium"),
-            style=styles.subtitle_style,
-        ),
-        href=url
-    )
-
-
-def navbar_icons_menu_item(text: str, icon: str, url: str) -> rx.Component:
-    """ Navbar component: Navbar menu item"""
-    return rx.link(
-        rx.hstack(
-            rx.icon(icon, size=16),
-            rx.text(text, size="3", weight="medium"),
-            style=styles.subtitle_style,
-        ),
-        href=url,
-    )
 
 
 def navbar() -> rx.Component:
